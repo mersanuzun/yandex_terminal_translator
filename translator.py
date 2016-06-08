@@ -18,6 +18,7 @@ class YandexUrl:
 
 url = YandexUrl(yandex_API_KEY, from_lang, to_lang)
 while(True):
+   print "Enter new text"
    new_text = raw_input()
    if new_text == ":q": break
    url.setText(new_text)
@@ -25,8 +26,7 @@ while(True):
    sock = urllib2.urlopen(url.toString())
    response = json.loads(sock.read())
    print response['text'][0]
-   for i in range(0, 2):
-     print  "*" * len(response['text'][0])   
+   print  "*" * len(response['text'][0])
 
 
 
