@@ -1,7 +1,7 @@
 import sys, urllib2, json
 from_lang = sys.argv[1]
 to_lang = sys.argv[2]
-yandex_API_KEY = "trnsl.1.1.20160608T123209Z.6dbcfeae8f76d0c5.cad7ae0272ee95362e35649c9a1628f48114e997"
+yandex_API_KEY = "**************"
 class YandexUrl:
    text = ""
 
